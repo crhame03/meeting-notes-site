@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy &mdash; Meeting Notes</title>
+<meta name="description" content="Privacy policy for the Meeting Notes iPhone app.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #6b6b6b;
+    --rule: #e6e6e6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121212; --fg: #ededed; --muted: #9a9a9a; --rule: #2c2c2c; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 34rem; margin: 0 auto; padding: 6rem 1.5rem 5rem; }
+  h1 { font-size: 2rem; font-weight: 600; letter-spacing: -0.02em; margin: 0 0 0.5rem; }
+  .updated { color: var(--muted); margin: 0 0 3.5rem; font-size: 0.9375rem; }
+  h2 { font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+       color: var(--muted); margin: 3rem 0 0.75rem; }
+  p { margin: 0 0 1.25rem; }
+  ul { margin: 0 0 1.25rem; padding-left: 1.1rem; }
+  li { margin-bottom: 0.5rem; }
+  footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+           color: var(--muted); font-size: 0.9375rem; }
+  a { color: inherit; text-underline-offset: 3px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Meeting Notes &middot; Last updated 28 October 2026</p>
+
+  <p>
+    Meeting Notes is a personal iPhone app that records a meeting, transcribes it,
+    and emails the transcript to an address you choose. This policy describes what
+    the app does with your data. In short: your recordings stay on your phone, and
+    the developer of this app never receives them.
+  </p>
+
+  <h2>No servers, no collection</h2>
+  <p>
+    Meeting Notes has no backend. There is no server operated by RhameAI or by the
+    developer that your data passes through or is stored on. The app contains no
+    analytics, no crash reporting, no advertising and no third-party tracking of
+    any kind. The developer receives no data about you or your use of the app.
+  </p>
+
+  <h2>Audio recordings</h2>
+  <p>
+    Audio is recorded to a file in the app's private storage on your iPhone. It is
+    never uploaded anywhere. Once the transcript has been emailed successfully, the
+    app deletes the audio file. If sending fails, the audio is deliberately kept on
+    the device so the transcript can be produced again, and it is deleted once the
+    email goes out.
+  </p>
+
+  <h2>Transcription</h2>
+  <p>
+    Speech is converted to text using Apple's speech recognition on the device, with
+    on-device recognition required. The audio is not sent to Apple's servers or to
+    any other transcription service. If your iPhone cannot perform on-device
+    recognition, transcription fails rather than falling back to a network service.
+  </p>
+
+  <h2>Email</h2>
+  <p>
+    The transcript is sent as an email through the Gmail API, from your own Google
+    account, to the recipient address you enter in the app. The app uses the
+    <code>gmail.send</code> permission, which allows sending mail only. It cannot
+    read, search, modify or delete anything in your mailbox.
+  </p>
+  <p>
+    The transcript text is included in the body of that email. Once sent, the
+    message is handled by Google under
+    <a href="https://policies.google.com/privacy">Google's privacy policy</a>, and by
+    whatever mail provider the recipient uses.
+  </p>
+
+  <h2>Google sign-in</h2>
+  <p>
+    Signing in stores a Google refresh token and the email address of the signed-in
+    account in the iOS Keychain on your device. These are used only to obtain access
+    tokens for sending mail. They are not transmitted anywhere other than Google, and
+    signing out deletes them from the device. You can also revoke the app's access at
+    any time from your
+    <a href="https://myaccount.google.com/permissions">Google Account permissions page</a>.
+  </p>
+
+  <h2>Calendar</h2>
+  <p>
+    If you grant calendar access, the app reads events around the time of a recording
+    so it can suggest who the meeting is with. Calendar data is read on the device,
+    used only to fill in that suggestion, and is not transmitted or stored anywhere.
+    Declining calendar access does not prevent the app from working.
+  </p>
+
+  <h2>Microphone and speech recognition</h2>
+  <p>
+    The app requests microphone access in order to record, and speech recognition
+    access in order to transcribe. Both are used only for those purposes.
+  </p>
+
+  <h2>Data retention and deletion</h2>
+  <p>
+    All app data &mdash; recordings, transcripts awaiting send, and your sign-in
+    credentials &mdash; lives only on your iPhone. Deleting the app removes all of it.
+    There is nothing stored elsewhere for the developer to delete on your behalf.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    Meeting Notes is a personal tool and is not directed at children.
+  </p>
+
+  <h2>Changes</h2>
+  <p>
+    If this policy changes, the revised version will be posted on this page with an
+    updated date.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy can go to
+    <a href="mailto:crhame03@gmail.com">crhame03@gmail.com</a>.
+  </p>
+
+  <footer>
+    <a href="index.html">Meeting Notes</a> &middot; RhameAI
+  </footer>
+</main>
+</body>
+</html>

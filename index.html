@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meeting Notes</title>
+<meta name="description" content="An iPhone app that records a meeting, transcribes it on the device, and emails you the transcript.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #6b6b6b;
+    --rule: #e6e6e6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121212; --fg: #ededed; --muted: #9a9a9a; --rule: #2c2c2c; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 34rem; margin: 0 auto; padding: 6rem 1.5rem 5rem; }
+  h1 { font-size: 2rem; font-weight: 600; letter-spacing: -0.02em; margin: 0 0 0.5rem; }
+  .tagline { color: var(--muted); margin: 0 0 3.5rem; font-size: 1.0625rem; }
+  h2 { font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+       color: var(--muted); margin: 3rem 0 0.75rem; }
+  p { margin: 0 0 1.25rem; }
+  ul { margin: 0 0 1.25rem; padding-left: 1.1rem; }
+  li { margin-bottom: 0.5rem; }
+  footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+           color: var(--muted); font-size: 0.9375rem; }
+  a { color: inherit; text-underline-offset: 3px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Meeting Notes</h1>
+  <p class="tagline">Record a meeting. Get the transcript in your inbox.</p>
+
+  <p>
+    Meeting Notes is a personal iPhone app. You tap one button to start recording,
+    lock your phone, and put it on the table. When the meeting ends, the app
+    transcribes the recording and emails you the text.
+  </p>
+
+  <h2>How it works</h2>
+  <ul>
+    <li>Recording keeps running while the phone is locked and in your pocket.</li>
+    <li>Transcription happens entirely on the iPhone, with no internet connection.</li>
+    <li>The transcript is emailed from your own Gmail account to an address you choose.</li>
+    <li>The audio file is deleted once the email has been sent.</li>
+  </ul>
+
+  <h2>Privacy</h2>
+  <p>
+    The recording never leaves your phone, and no one operates a server that sees
+    your meetings &mdash; there is no backend, no analytics and no third-party service
+    involved. The full details are in the
+    <a href="privacy.html">privacy policy</a>.
+  </p>
+
+  <h2>Availability</h2>
+  <p>
+    Meeting Notes is a personal project, built for and used by its author. It is not
+    distributed through the App Store.
+  </p>
+
+  <footer>
+    RhameAI &middot; <a href="privacy.html">Privacy policy</a> &middot;
+    <a href="mailto:crhame03@gmail.com">crhame03@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
